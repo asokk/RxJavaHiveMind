@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    /*Add Compile options in following block*/
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -32,9 +38,6 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
     // butter knife
-
-    /* implementation 'com.jakewharton:butterknife:10.0.0'
-     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'*/
 
     implementation "com.jakewharton:butterknife:$rootProject.butterKnife"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnife"
