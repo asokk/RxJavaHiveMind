@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".basics.BasicObservableObserverDisposableActivity" />
+        <activity android:name=".basics.BasicObservableFilterOperatorActivity" />
     </application>
 
 </manifest>
